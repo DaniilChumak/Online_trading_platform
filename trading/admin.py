@@ -6,7 +6,7 @@ from trading.models import Element, Product, Contacts
 class ElementAdmin(admin.ModelAdmin):
     """
     Класс ElementAdmin наследуется от класса ModelAdmin. Определяет вывод полей экземпляра
-    в панель администрирования и возможность их редактирования.
+    в админ-панель и возможность их редактирования.
     """
 
     list_display = ('title', 'item', 'level', 'supplier_link', 'debt_to_supplier',)
@@ -41,7 +41,7 @@ class ElementAdmin(admin.ModelAdmin):
 class ProductAdmin(admin.ModelAdmin):
     """
     Класс ProductAdmin наследуется от класса ModelAdmin. Определяет вывод полей экземпляра
-    в панель администрирования и возможность их редактирования.
+    в админ-панель и возможность их редактирования.
     """
 
     list_display = ('unit', 'title', 'model', 'release_date', 'price',)
@@ -53,7 +53,7 @@ class ProductAdmin(admin.ModelAdmin):
 class ContactsAdmin(admin.ModelAdmin):
     """
     Класс ContactsAdmin наследуется от класса ModelAdmin. Определяет вывод полей экземпляра
-    в панель администрирования и возможность их редактирования.
+    в админ-панель и возможность их редактирования.
     """
 
     list_display = ('unit', 'email', 'country', 'city', 'street', 'house',)
